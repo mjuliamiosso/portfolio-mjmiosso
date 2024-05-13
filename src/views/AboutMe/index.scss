@@ -1,0 +1,51 @@
+@import '../../sass/_variables';
+@import '../../sass/_mixins';
+
+.aboutme{
+    background: white;
+    padding: 0 24px;
+    color: $light-purple;
+    padding-top: 50px;
+
+    img{
+        width: 239px;
+        height: 259px;
+        object-fit: cover;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        border-radius: 7px;
+    }
+}
+
+.header-text{
+    h3{
+        text-align: center;
+        font-size: $fs-500;
+        margin-bottom: 20px;
+    }
+    p{
+        text-align: center;
+        font-size: $fs-400;
+        color: $light-text;
+    }
+}
+
+.aboutme-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutme-email{
+    color: $light-purple !important;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.aboutme-link{
+    @include flex-center;
+    gap: 20px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+
+}

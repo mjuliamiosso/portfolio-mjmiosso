@@ -1,7 +1,9 @@
 import React from 'react'
 import './index.scss'
 import '../../sass/_mixins.scss'
-import { RiMoonClearLine } from "react-icons/ri";
+import ButtonSwitch from '../../components/ButtonSwitch'
+import { LuMoonStar } from "react-icons/lu";
+import { slide as Menu } from 'react-burger-menu'
 
 const Navbar = () => {
   return (
@@ -9,12 +11,12 @@ const Navbar = () => {
       <nav className='navbar container flex-spacebetween'>
           <a className='navbar-name' href="">MJMIOSSO</a>
           <div>
-            <ul className='navbar-links'>
-              <li><a href="">SOBRE MIM</a></li>
-              <li><a href="">PROJETOS</a></li>
-              <li><a href="">CONTATO</a></li>
-            </ul>
-            <button><RiMoonClearLine /></button>
+            <ButtonSwitch icon={<LuMoonStar />}></ButtonSwitch>
+            <menu className='navbar-links'>
+              <a href="">SOBRE MIM</a>
+              <a href="">PROJETOS</a>
+              <a href="">CONTATO</a>
+            </menu>
           </div>
       </nav>
     </div>

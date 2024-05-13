@@ -1,0 +1,13 @@
+@import '../sass/variables';
+
+.btn-purple{
+    background: $light-purple;
+    color: $light-bg;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    font-size: $fs-300;
+    font-weight:500;
+}

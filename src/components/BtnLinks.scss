@@ -1,0 +1,19 @@
+@import '../sass/variables';
+
+.btn-link{
+    font-size: 18px;
+    padding-top: 4px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid $light-purple;
+    color: $light-purple;
+    background: none;
+    cursor: pointer;
+}
+
+.btn-link:hover{
+    color: $light-bg;
+    background: $light-purple;
+    transition: all .3s ease;
+}

@@ -1,0 +1,19 @@
+@import '../sass/variables';
+
+.btn-switch{
+    font-size: 18px;
+    padding-top: 4px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid $light-text;
+    color: $light-text;
+    background: none;
+    cursor: pointer;
+}
+
+.btn-switch:hover{
+    color: $light-bg;
+    background: $light-text;
+    transition: all .3s ease;
+}
