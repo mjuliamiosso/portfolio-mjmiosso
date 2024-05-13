@@ -1,0 +1,38 @@
+//COLORS
+$light-bg: #F4F1F4;
+$light-container: #FFFFFF;
+$light-text: #7D0633;
+$light-purple: #501547;
+$light-orange: #FFA379;
+$light-beige: #f3ece680;
+$light-gradient: linear-gradient(90deg, rgba(125,6,51,1) 0%, rgba(255,163,121,1) 100%);
+
+$dark-bg: #181718;
+$dark-text: #DB6994;
+$dark-purple: #853778;
+$dark-orange: #F18C5E;
+$dark-grey: #463e4196;
+$dark-gradient: linear-gradient(90deg, rgba(155,29,77,1) 0%, rgba(241,140,94,1) 100%);
+
+//TEXT
+$fs-300: 14px;
+$fs-400: 16px;
+$fs-500: 20px;
+$fs-600: 24px;
+$fs-700: 36px;
+
+@media (min-width: 1024px){
+  $fs-300: 16px;
+  $fs-400: 20px;
+  $fs-500: 24px;
+  $fs-600: 32px;
+  $fs-700: 54px;
+}
+  
+@media (min-width: 1440px){
+  $fs-300: 20px;
+  $fs-400: 24px;
+  $fs-500: 28px;
+  $fs-600: 36px;
+  $fs-700: 64px;
+}

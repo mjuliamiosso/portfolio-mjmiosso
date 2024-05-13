@@ -1,0 +1,24 @@
+@import '../../sass/variables';
+@import '../../sass/mixins';
+
+.navbar{
+    @include flex-spacebetween;
+    padding: 2rem 20px;
+
+    ul{
+        @include flex-spacebetween;
+    }
+
+    div{
+        display: flex;
+    }
+    
+    .navbar-name{
+        font-weight: bold;
+    }
+
+    a{
+        color: $light-text;
+        font-size: $fs-300;
+    }
+}

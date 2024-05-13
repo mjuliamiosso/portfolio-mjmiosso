@@ -1,0 +1,22 @@
+@import '../../sass/variables';
+
+.header{
+    padding: 0 20px;
+    margin-top: 6rem;
+
+    p{
+        color: $light-text;
+        font-size: $fs-400;
+    }
+
+    h1{
+        font-size: $fs-700;
+        font-weight: 800;
+        max-width: 335px;
+
+        background: $light-gradient;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      
+    }
+}
