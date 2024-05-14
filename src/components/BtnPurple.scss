@@ -3,11 +3,18 @@
 .btn-purple{
     background: $light-purple;
     color: $light-bg;
-    border: none;
+    border:1px solid $light-purple;
     padding: 5px 15px;
     border-radius: 5px;
     cursor: pointer;
 
     font-size: $fs-300;
-    font-weight:500;
+    font-weight:600;
+}
+
+.btn-purple:hover{
+    color: $light-purple;
+    background: $light-bg ;
+    border: 1px solid $light-purple;
+    transition: all .3s ease;
 }

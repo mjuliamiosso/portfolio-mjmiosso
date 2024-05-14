@@ -9,5 +9,11 @@
     cursor: pointer;
 
     font-size: $fs-300;
-    font-weight: 700;
+    font-weight: 600;
+}
+
+.btn-white:hover{
+    color: $light-bg;
+    background: $light-purple;
+    transition: all .3s ease;
 }

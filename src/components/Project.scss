@@ -1,0 +1,11 @@
+@import '../sass/_variables';
+
+.project-image{
+    img{
+        width: 385px;
+        height: 385px;
+        object-fit: cover;
+        border-radius: 7px;
+        
+    }
+}
