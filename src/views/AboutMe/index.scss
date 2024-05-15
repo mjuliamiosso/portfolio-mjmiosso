@@ -89,8 +89,44 @@
         align-items: center;
         justify-content: space-between;
     }
+}
+
+@media (min-width: 1024px){
+    .aboutme{
+        h2{
+            font-size: 36px;
+        }
+    
+        img{
+            width: 488px;
+            height: 529px;
+        }
+    }
+    
+    .header-text{
+        margin-top: 50px;
+        margin-bottom: 30px;
+
+        h3{
+            font-size: 28px;
+        }
+        p{
+            font-size: 24px;
+            max-width: 500px;
+        }
+    }
+    
+    .aboutme-container{
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
     
     .aboutme-email{
-        text-align: center !important;
+        text-align: start !important;
+    }
+
+    .aboutme-link{
+        justify-content: start !important;
     }
 }

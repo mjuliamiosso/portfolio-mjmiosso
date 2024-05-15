@@ -17,3 +17,12 @@
     background: $light-purple;
     transition: all .3s ease;
 }
+
+@media (min-width: 1024px) {
+    .btn-link{
+        font-size: 22px;
+        padding-top: 4px;
+        width: 35px;
+        height: 35px;
+    }
+}

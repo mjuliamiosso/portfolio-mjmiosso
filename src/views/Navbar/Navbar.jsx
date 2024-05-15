@@ -10,7 +10,7 @@ const Navbar = () => {
       <nav className='navbar container flex-spacebetween'>
           <a className='navbar-name' href="">MJMIOSSO</a>
           <div>
-            <ButtonSwitch icon={<LuMoonStar />}></ButtonSwitch>
+            <ButtonSwitch className='btn-switch' icon={<LuMoonStar />}></ButtonSwitch>
             <div className='navbar-links'>
               <a href="">SOBRE MIM</a>
               <a href="">PROJETOS</a>

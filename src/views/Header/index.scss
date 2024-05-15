@@ -30,7 +30,6 @@
 @media (min-width: 1024px) {
     
     .header{
-        padding: 0 20px;
         margin-top: 8rem;
         margin-bottom: 10rem;
         p{
@@ -43,10 +42,21 @@
             max-width: 500px;
             }
     }
+}
+
+@media (min-width: 1440px) {
     
-    .header-btn{
-        margin-top: 40px;
-        display: flex;
-        gap: 30px;
+    .header{
+        margin-top: 12rem;
+        margin-bottom: 15rem;
+        p{
+            font-size: 24px;
+        }
+    
+        h1{
+            font-size: 64px;
+            font-weight: 800;
+            max-width: 600px;
+            }
     }
 }
