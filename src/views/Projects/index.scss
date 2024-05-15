@@ -6,10 +6,33 @@
     margin-top: 100px;
 
     h2{
-        font-size: $fs-600;
+        font-size: 24px;
         font-weight: 700;
         text-align: end;
         margin-bottom: 70px;
         color: $light-purple;
+    }
+}
+
+@media (min-width: 1024px) {
+    .projects{
+        padding: 0 24px;
+        margin-top: 100px;
+    
+        h2{
+            font-size: 32px;
+        }
+    }
+
+    .projects-container-right{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 20px;
+    }
+
+    .projects-container-left{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 20px;
     }
 }
