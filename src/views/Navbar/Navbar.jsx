@@ -1,7 +1,7 @@
 import React from 'react'
 import './index.scss'
 import '../../sass/_mixins.scss'
-import ButtonSwitch from '../../components/ButtonSwitch'
+import BtnLinks from '../../components/BtnLinks'
 import { LuMoonStar } from "react-icons/lu";
 
 const Navbar = () => {
@@ -10,7 +10,7 @@ const Navbar = () => {
       <nav className='navbar container flex-spacebetween'>
           <a className='navbar-name' href="">MJMIOSSO</a>
           <div>
-            <ButtonSwitch className='btn-switch' icon={<LuMoonStar />}></ButtonSwitch>
+            <BtnLinks className='btn-switch' icon={<LuMoonStar />}></BtnLinks>
             <div className='navbar-links'>
               <a href="">SOBRE MIM</a>
               <a href="">PROJETOS</a>

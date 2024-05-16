@@ -2,6 +2,7 @@ import React from 'react'
 import './index.scss'
 import Photo from '../../assets/photo.png'
 import BtnLinks from '../../components/BtnLinks'
+import AutoPlayCarousel from '../../components/AutoPlayCarousel'
 import { FiGithub } from "react-icons/fi";
 import { TiSocialLinkedin } from "react-icons/ti";
 import { FaInstagram } from "react-icons/fa";
@@ -33,6 +34,7 @@ const AboutMe = () => {
                   <p className='aboutme-email'>mjuliamiosso@gmail.com</p>
             </div>
         </div>
+            <AutoPlayCarousel></AutoPlayCarousel>
         </div>
         
     </div>

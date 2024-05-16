@@ -12,16 +12,16 @@
     font-weight:600;
 }
 
-.btn-purple:hover{
-    color: $light-purple;
-    background: $light-bg ;
-    border: 1px solid $light-purple;
-    transition: all .3s ease;
-}
-
 @media (min-width: 1024px) {
     .btn-purple{
         padding: 7px 18px;
-        font-size: 20px;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .btn-purple{
+        padding: 7px 18px;
+        font-size: 18px;
     }
 }

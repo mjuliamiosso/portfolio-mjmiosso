@@ -8,14 +8,8 @@
     border-radius: 5px;
     cursor: pointer;
 
-    font-size: $fs-300;
+    font-size: 14px;
     font-weight: 600;
-}
-
-.btn-white:hover{
-    color: $light-bg;
-    background: $light-purple;
-    transition: all .3s ease;
 }
 
 @media (min-width: 1024px) {
@@ -28,6 +22,6 @@
 @media (min-width: 1440px) {
     .btn-white{
         padding: 7px 18px;
-        font-size: 20px;
+        font-size: 18px;
     }
 }

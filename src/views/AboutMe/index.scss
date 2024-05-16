@@ -3,7 +3,6 @@
 
 .aboutme{
     background: white;
-    padding: 0 20px;
     color: $light-purple;
     padding-top: 50px;
 
@@ -56,10 +55,15 @@
 
 }
 
+.skills{
+    display: flex;
+    gap: 20px;
+}
+
 @media (min-width: 1024px){
     .aboutme{
         h2{
-            font-size: 32px;
+            font-size: 28px;
         }
     
         img{
@@ -73,13 +77,14 @@
     .header-text{
         margin-top: 50px;
         margin-bottom: 30px;
+
         h3{
             text-align: start;
-            font-size: 24px;
+            font-size: 24px ;
         }
         p{
             text-align: start;
-            font-size: 20px;
+            font-size: 18px;
             max-width: 395px;
         }
     }
@@ -89,12 +94,16 @@
         align-items: center;
         justify-content: space-between;
     }
+
+    .aboutme-link{
+        justify-content: start;
+    }
 }
 
-@media (min-width: 1024px){
+@media (min-width: 1440px){
     .aboutme{
         h2{
-            font-size: 36px;
+            font-size: 32px;
         }
     
         img{
@@ -108,10 +117,10 @@
         margin-bottom: 30px;
 
         h3{
-            font-size: 28px;
+            font-size: 26px;
         }
         p{
-            font-size: 24px;
+            font-size: 20px;
             max-width: 500px;
         }
     }

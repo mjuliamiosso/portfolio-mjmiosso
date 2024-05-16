@@ -3,7 +3,7 @@
 
 .navbar{
     @include flex-spacebetween;
-    padding: 2rem 20px;
+    margin: 2rem 0;
 
     .navbar-links{
         @include flex-spacebetween;
@@ -24,7 +24,7 @@
 }
 
 .btn-switch{
-    margin-right: 20px;
+    margin-right: 20px ;
 }
 
 @media (min-width: 1024px){
@@ -37,16 +37,22 @@
     .navbar-links{
         gap: 10px;
     }
+    .btn-switch{
+        margin-right: 20px ;
+    }
 }
 
 @media (min-width: 1440px){
     .navbar{
         a{
-            font-size: 20px;
+            font-size: 18px;
         }
     }
     .navbar-links{
         gap: 20px;
+    }
+    .btn-switch{
+        margin-right: 20px ;
     }
     
 }
