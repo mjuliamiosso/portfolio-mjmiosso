@@ -8,32 +8,43 @@ const AutoPlayCarousel = () => {
   return (
     <div className='logos'>
         <div className="logo-slide">
-            <FaIcons.FaHtml5 />
+            <p><FaIcons.FaHtml5 /></p>
+            <p ><FaIcons.FaCss3 /></p>
+            <p><IoLogoJavascript /></p>
+             <p><FaIcons.FaFigma /></p>
+            <p><FaIcons.FaReact /></p>
+            <p><FaIcons.FaBootstrap /></p>
+            <p><SiIcons.SiTypescript /></p>
+            <p><SiIcons.SiMongodb /></p>
+            <p><SiIcons.SiMysql /></p>
+            <p><FaIcons.FaNode /></p>
         </div>
         <div className="logo-slide">
-            <FaIcons.FaCss3 />
+            <p><FaIcons.FaHtml5 /></p>
+            <p><FaIcons.FaCss3 /></p>
+            <p><IoLogoJavascript /></p>
+            <p><FaIcons.FaFigma /></p>
+            <p><FaIcons.FaReact /></p>
+            <p><FaIcons.FaBootstrap /></p>
+            <p><SiIcons.SiTypescript /></p>
+            <p><SiIcons.SiMongodb /></p>
+            <p><SiIcons.SiMysql /></p>
+            <p><FaIcons.FaNode /></p>
         </div>
         <div className="logo-slide">
-            <FaIcons.FaReact />
+            <p><FaIcons.FaHtml5 /></p>
+            <p><FaIcons.FaCss3 /></p>
+            <p><IoLogoJavascript /></p>
+            <p><FaIcons.FaFigma /></p>
+            <p><FaIcons.FaReact /></p>
+            <p><FaIcons.FaBootstrap /></p>
+            <p><SiIcons.SiTypescript /></p>
+            <p><SiIcons.SiMongodb /></p>
+            <p><SiIcons.SiMysql /></p>
+            <p><FaIcons.FaNode /></p>
         </div>
-        <div className="logo-slide">
-            <IoLogoJavascript />
-        </div>
-        <div className="logo-slide">
-            <FaIcons.FaBootstrap />
-        </div>
-        <div className="logo-slide">
-            <SiIcons.SiTypescript />
-        </div>
-        <div className="logo-slide">
-            <SiIcons.SiMongodb />
-        </div>
-        <div className="logo-slide">
-            <SiIcons.SiMysql />
-        </div>
-        <div className="logo-slide">
-            <FaIcons.FaNode />
-        </div>
+        
+        
     </div>
   )
 }

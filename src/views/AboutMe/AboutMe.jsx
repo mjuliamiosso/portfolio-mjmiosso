@@ -34,7 +34,9 @@ const AboutMe = () => {
                   <p className='aboutme-email'>mjuliamiosso@gmail.com</p>
             </div>
         </div>
-            <AutoPlayCarousel></AutoPlayCarousel>
+        </div>
+        <div className='carousel'>
+          <AutoPlayCarousel></AutoPlayCarousel>
         </div>
         
     </div>

@@ -1,7 +1,33 @@
 @import '../sass/_variables';
 
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+
+}
+.logos{
+    overflow: hidden;
+    display: flex;
+    gap: 20px;
+    white-space: nowrap;
+}
+
+.logos:hover .logo-slide{
+    animation-play-state: paused;
+}
+
 .logo-slide{
-    margin: 0 !important;
+    display: flex;
+    gap: 20px;
+
+    animation: 35s slide infinite linear;
+}
+
+.logo-slide p{
     width: 74px;
     height: 74px;
     background: $light-beige;
@@ -9,11 +35,22 @@
     font-size: 40px;
     padding: 16px;
     border-radius: 5px;
-
-    white-space: nowrap;
 }
 
-.logos{
-    display: flex;
-    gap: 20px;
+@media (min-width: 1024px) {
+    .logo-slide p{
+        width: 105px;
+        height: 105px;
+        font-size: 55px;
+        padding: 25px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .logo-slide p{
+        width: 130px;
+        height: 130px;
+        font-size: 65px;
+        padding: 34px;
+    }
 }

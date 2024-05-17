@@ -60,6 +60,10 @@
     gap: 20px;
 }
 
+.carousel{
+    padding-bottom: 50px;
+}
+
 @media (min-width: 1024px){
     .aboutme{
         h2{
@@ -137,5 +141,9 @@
 
     .aboutme-link{
         justify-content: start !important;
+    }
+
+    .carousel{
+        padding-top: 50px;
     }
 }
