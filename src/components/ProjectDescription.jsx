@@ -9,8 +9,8 @@ const ProjectDescription = ({title, text, github, deploy}) => {
         <p className='project-title'>{title}</p>
         <p className='project-text'>{text}</p>
         <div className='project-btn'>
-            <a href={github}><BtnPurple text='GitHub'></BtnPurple></a>
-            <a href={deploy}><BtnWhite text='Deploy'></BtnWhite></a>
+            <a href={github} target="_blank"><BtnPurple text='GitHub'></BtnPurple></a>
+            <a href={deploy} target="_blank"><BtnWhite text='Deploy'></BtnWhite></a>
         </div>
     </div>
   )

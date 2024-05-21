@@ -2,11 +2,32 @@
 
 .project-image{
     img{
-        max-width: 385px;
+        max-width: 388px;
         width: 100%;
         max-height: 385px;
         object-fit: cover;
         border-radius: 7px;
         
+    }
+}
+
+@media (min-width: 1024px) {
+    .project-image{
+        img{
+            max-width: 475px;
+            max-height: 291px;
+            border-radius:7px 7px 0 0 ;
+            
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .project-image{
+        img{
+            max-width: 1200px;
+            height: 387px;
+            
+        }
     }
 }

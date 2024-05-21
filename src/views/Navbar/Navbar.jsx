@@ -6,8 +6,8 @@ import { LuMoonStar } from "react-icons/lu";
 
 const Navbar = () => {
   return (
-    <div>
-      <nav className='navbar container flex-spacebetween'>
+    <div className='navbar-bg'>
+      <nav className='navbar container'>
           <a className='navbar-name' href="">MJMIOSSO</a>
           <div>
             <BtnLinks className='btn-switch' icon={<LuMoonStar />}></BtnLinks>

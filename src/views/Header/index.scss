@@ -1,11 +1,10 @@
 @import '../../sass/variables';
 
 .header{
-    margin-top: 6rem;
-    margin-bottom: 7rem;
+    padding-top: 6rem;
+    padding-bottom: 7rem;
 
     p{
-        color: $light-text;
         font-size: 16px;
     }
 
@@ -13,24 +12,49 @@
         font-size: 36px;
         font-weight: 800;
         max-width: 335px;
-
-        background: $light-gradient;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
         }
 }
 
 .header-btn{
-    margin-top: 40px;
+    padding-top: 40px;
     display: flex;
     gap: 30px;
+}
+
+// Light Theme
+#light .header{
+    background: $light-bg;
+
+    p{
+        color: $light-text;
+    }
+
+    h1{
+        background: $light-gradient;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+// Dark Theme
+#dark .header{
+    background: $dark-bg;
+    p{
+        color: $dark-text;
+    }
+
+    h1{
+        background: $dark-gradient;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }
 
 @media (min-width: 1024px) {
     
     .header{
-        margin-top: 8rem;
-        margin-bottom: 10rem;
+        padding-top: 8rem;
+        padding-bottom: 10rem;
         p{
             font-size: 18px;
         }
@@ -46,8 +70,8 @@
 @media (min-width: 1440px) {
     
     .header{
-        margin-top: 12rem;
-        margin-bottom: 15rem;
+        padding-top: 12rem;
+        padding-bottom: 15rem;
         p{
             font-size: 24px;
         }

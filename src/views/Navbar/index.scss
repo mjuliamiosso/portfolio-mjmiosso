@@ -1,9 +1,12 @@
 @import '../../sass/variables';
 @import '../../sass/mixins';
 
+.navbar-bg{
+    padding: 2rem 0;
+}
+
 .navbar{
     @include flex-spacebetween;
-    margin: 2rem 0;
 
     .navbar-links{
         @include flex-spacebetween;
@@ -18,13 +21,33 @@
     }
 
     a{
-        color: $light-text;
         font-size: 14px;
     }
 }
 
 .btn-switch{
     margin-right: 20px ;
+}
+
+// Light Theme
+#light .navbar{
+    a{
+        color: $light-text;
+    }
+}
+
+#light .navbar-bg{
+    background: $light-bg;
+}
+
+// Dark Theme
+#dark .navbar{
+    a{
+        color: $dark-text;
+    }
+}
+#dark .navbar-bg{
+    background: $dark-bg;
 }
 
 @media (min-width: 1024px){

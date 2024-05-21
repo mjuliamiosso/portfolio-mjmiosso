@@ -5,19 +5,28 @@ import AboutMe from './views/AboutMe/AboutMe'
 import Projects from './views/Projects/Projects'
 import Form from './views/Form/Form'
 import Footer from './views/Footer/Footer'
+import { createContext } from 'react'
+
+export const ThemeContext = createContext(null)
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [theme, setTheme] = useState('dark')
+
+  const toggleTheme = () => {
+    setTheme((curr) => (curr === "light" ? "dark": "light"))
+  }
 
   return (
-    <>
-      <Navbar/>
-      <Header/>
-      <AboutMe/>
-      <Projects/>
-      <Form/>
-      <Footer/>
-    </>
+    <ThemeContext.Provider value={{theme, toggleTheme}}>
+      <div id={theme}>
+        <Navbar/>
+        <Header/>
+        <AboutMe/>
+        <Projects/>
+        <Form/>
+        <Footer/>
+      </div>
+    </ThemeContext.Provider>
   )
 }
 

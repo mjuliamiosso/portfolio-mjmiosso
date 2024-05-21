@@ -1,15 +1,39 @@
 @import '../sass/variables';
 
 .btn-purple{
-    background: $light-purple;
-    color: $light-bg;
-    border:1px solid $light-purple;
     padding: 5px 15px;
     border-radius: 5px;
     cursor: pointer;
 
     font-size: 14px;
     font-weight:600;
+}
+
+.btn-purple:hover{
+    transform: translateY(-0.25em);
+    transition: .3s all ease-out;
+}
+
+// Light Theme
+#light .btn-purple{
+    background: $light-purple;
+    color: $light-bg;
+    border:1px solid $light-purple;
+}
+
+#light .btn-purple:hover{
+    box-shadow: 0 0.5em 0.5em -0.4em $light-purple;
+}
+
+// Dark Theme
+#dark .btn-purple{
+    background: $dark-purple;
+    color: $dark-bg;
+    border:1px solid $dark-purple;
+}
+
+#dark .btn-purple:hover{
+    box-shadow: 0 0.5em 0.5em -0.4em $dark-purple;
 }
 
 @media (min-width: 1024px) {

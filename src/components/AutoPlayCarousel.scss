@@ -9,6 +9,7 @@
     }
 
 }
+
 .logos{
     overflow: hidden;
     display: flex;
@@ -30,11 +31,21 @@
 .logo-slide p{
     width: 74px;
     height: 74px;
-    background: $light-beige;
-    color: $light-text;
     font-size: 40px;
     padding: 16px;
     border-radius: 5px;
+}
+
+// Light Theme
+#light .logo-slide p{
+    background: $light-beige;
+    color: $light-text;
+}
+
+// Dark Theme
+#dark .logo-slide p{
+    background: $dark-container;
+    color: $dark-text;
 }
 
 @media (min-width: 1024px) {

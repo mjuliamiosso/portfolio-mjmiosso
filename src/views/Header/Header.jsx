@@ -5,7 +5,8 @@ import BtnWhite from '../../components/BtnWhite'
 
 const Header = () => {
   return (
-    <div className='header container'>
+    <div className='header'>
+      <div className='container'>
         <p>Olá, sou</p>
         <h1>Maria Júlia Miosso</h1>
         <p>Desenvolvedora Front-End</p>
@@ -13,6 +14,7 @@ const Header = () => {
           <BtnPurple text='Download CV'></BtnPurple>
           <BtnWhite text='Entre em contato'></BtnWhite>
         </div>
+      </div>
     </div>
   )
 }

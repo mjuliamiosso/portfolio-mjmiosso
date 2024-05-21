@@ -6,6 +6,7 @@ import AutoPlayCarousel from '../../components/AutoPlayCarousel'
 import { FiGithub } from "react-icons/fi";
 import { TiSocialLinkedin } from "react-icons/ti";
 import { FaInstagram } from "react-icons/fa";
+import { FaLocationDot } from "react-icons/fa6";
 
 const AboutMe = () => {
   return (
@@ -14,8 +15,8 @@ const AboutMe = () => {
             <h2>Sobre mim</h2>
             <div className='aboutme-container'>
                 <img src={Photo} alt="" />
-                <div className='header-text'>
-                    <h3>Jacareí, São Paulo</h3>
+                <div className='aboutme-text'>
+                    <h3>Jacareí, São Paulo <FaLocationDot /></h3>
                     <p>Olá! Sou uma desenvolvedora <b>Front End </b>
                     apaixonada por <b>UI/UX e design</b>. Me formei na
                     <b> Escola de Tecnologia DNC</b>, onde concluí o

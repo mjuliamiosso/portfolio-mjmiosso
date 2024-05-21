@@ -2,14 +2,29 @@
 
 .btn-white{
     background: none;
-    color: $light-purple;
-    border: 1px solid $light-purple;
     padding: 5px 15px;
     border-radius: 5px;
     cursor: pointer;
 
     font-size: 14px;
     font-weight: 600;
+}
+
+.btn-white:hover{
+    transform: translateY(-0.25em);
+    transition: .3s all ease-out;
+}
+
+// Light Theme
+#light .btn-white{
+    color: $light-purple;
+    border: 1px solid $light-purple;
+}
+
+// Dark Theme
+#dark .btn-white{
+    color: $dark-purple;
+    border: 1px solid $dark-purple;
 }
 
 @media (min-width: 1024px) {
