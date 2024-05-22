@@ -10,7 +10,7 @@ Criei e codei meu portfolio usando o Figma e React, combinando meu amor por desi
 * **React**
 * **Sass**
 
-## 🔧 Ferramentas Utilizados
+## 🔧 Ferramentas Utilizadas
 
 * **react-icon**
 * **react-switch**
