@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Navbar from './views/Navbar/Navbar'
 import Header from './views/Header/Header'
 import AboutMe from './views/AboutMe/AboutMe'
@@ -18,10 +18,11 @@ function App() {
   const toggleTheme = () => {
     setTheme((curr) => (curr === "light" ? "dark": "light"))
   }
-
+ 
   return (
+    
     <ThemeContext.Provider value={{theme, toggleTheme}}>
-      <div id={theme}>
+      <div id={theme} >
         <div className='switch-container'>
           <Navbar/>
           <div className='switch container'>

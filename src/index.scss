@@ -10,6 +10,10 @@
   list-style: none;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 .container{
   max-width: 428px;
   width: 100%;
@@ -26,7 +30,7 @@
 }
 
 .switch{
-  margin-top: -56px;
+  margin-top: -48px;
   padding-left: 200px;
 }
 
@@ -42,12 +46,75 @@
   margin-left: 8px;
 }
 
+.left-underline::after{
+  content: '';
+  display: block;
+  width: 80px;
+  padding-top: 3px;
+}
+
+#light .left-underline::after{
+  border-bottom: 5px solid $light-orange;
+}
+
+#dark .left-underline::after{
+  border-bottom: 5px solid $dark-orange;
+}
+
+.right-underline::after{
+  content: '';
+  display: block;
+  float: right;
+  margin-top: -65px;
+
+  width: 60px;
+}
+
+#light .right-underline::after{
+  border-bottom: 5px solid $light-orange;
+}
+
+#dark .right-underline::after{
+  border-bottom: 5px solid $dark-orange;
+}
+
+.center-underline::after{
+  content: '';
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 130px;
+  padding-top: 3px;
+}
+
+#light .center-underline::after{
+  border-bottom: 5px solid $light-orange;
+}
+
+#dark .center-underline::after{
+  border-bottom: 5px solid $dark-orange;
+}
+
+
 @media (min-width: 1024px){
   .container{
     max-width: 1024px;
   }
   .switch{
     padding-left: 650px;
+  }
+
+  .left-underline::after{
+    width: 90px;
+  }
+
+  .right-underline::after{
+    width: 75px;
+  }
+
+  .center-underline::after{
+    width: 150px;
   }
 }
 
@@ -57,5 +124,17 @@
   }
   .switch{
     padding-left: 1020px;
+  }
+
+  .left-underline::after{
+    width: 110px;
+  }
+
+  .right-underline::after{
+    width: 85px;
+  }
+
+  .center-underline::after{
+    width: 180px;
   }
 }

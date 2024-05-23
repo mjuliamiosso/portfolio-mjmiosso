@@ -17,6 +17,7 @@
 .project-container{
     padding-bottom: 20px;
     border-radius:7px;
+    margin-bottom: 20px;
 }
 
 // Light Theme
@@ -32,7 +33,7 @@
 
 #light .project-container{
     background-color: $light-container;
-    margin-bottom: 20px;
+    box-shadow: 0px 7px 5px 0px rgb(224, 224, 224);
 }
 
 // Dark Theme
@@ -48,6 +49,7 @@
 
 #dark .project-container{
     background-color: $dark-grey;
+    box-shadow: 0px 7px 5px 0px rgb(8, 8, 8);
 }
 
 @media (min-width: 1024px) {
@@ -82,5 +84,11 @@
 
     .projects-container-left{
         grid-template-columns: 2fr 1fr;
+    }
+
+    .projects{
+        h2{
+            font-size: 32px;
+        }
     }
 }

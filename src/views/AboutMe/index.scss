@@ -109,6 +109,7 @@
     .aboutme{
         h2{
             font-size: 28px;
+            margin-top: 30px;
         }
     
         img{
@@ -149,6 +150,7 @@
     .aboutme{
         h2{
             font-size: 32px;
+            margin-bottom: 40px;
         }
     
         img{
@@ -169,12 +171,7 @@
             max-width: 500px;
         }
     }
-    
-    .aboutme-container{
-        flex-direction: row-reverse;
-        align-items: center;
-        justify-content: space-between;
-    }
+
     
     .aboutme-email{
         text-align: start !important;
