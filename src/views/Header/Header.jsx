@@ -14,7 +14,7 @@ const Header = () => {
           <p>Desenvolvedora Front-End</p>
           <div className='header-btn'>
             <BtnPurple text='Download CV'></BtnPurple>
-            <BtnWhite text='Entre em contato'></BtnWhite>
+            <a href="#form"><BtnWhite text='Entre em contato'></BtnWhite></a>
           </div>
         </Fade>
       </div>
