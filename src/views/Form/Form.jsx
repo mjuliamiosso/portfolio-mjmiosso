@@ -32,9 +32,9 @@ const Form = () => {
           <h2>Entre em contato</h2>
           <span className='center-underline'></span>
           <form ref={form} onSubmit={sendEmail} className='form-input'>
-            <input name='user_name' type="text" placeholder='Nome'/>
-            <input name='user_email' type="email" placeholder='E-mail'/>
-            <textarea name="message" placeholder='Deixe sua mensagem...'></textarea>
+            <input name='user_name' type="text" placeholder='Nome' required/>
+            <input name='user_email' type="email" placeholder='E-mail' required/>
+            <textarea name="message" placeholder='Deixe sua mensagem...' required></textarea>
             <button type="submit">Enviar</button>
           </form>
         </Fade>

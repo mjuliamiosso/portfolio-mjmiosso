@@ -3,6 +3,7 @@ import './index.scss'
 import BtnPurple from '../../components/BtnPurple'
 import BtnWhite from '../../components/BtnWhite'
 import { Fade } from "react-awesome-reveal";
+import cv from '../../assets/MARIA-JULIA-MIOSSO.pdf'
 
 const Header = () => {
   return (
@@ -13,7 +14,7 @@ const Header = () => {
           <h1>Maria Júlia Miosso</h1>
           <p>Desenvolvedora Front-End</p>
           <div className='header-btn'>
-            <BtnPurple text='Download CV'></BtnPurple>
+            <a href={cv} download="MARIA-JULIA-MIOSSO"><BtnPurple text='Download CV'></BtnPurple></a>
             <a href="#form"><BtnWhite text='Entre em contato'></BtnWhite></a>
           </div>
         </Fade>
