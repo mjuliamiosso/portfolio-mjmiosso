@@ -23,9 +23,9 @@ const AboutMe = () => {
                 <Fade direction='left'>
                   <h3>Jacareí, São Paulo <FaLocationDot /></h3>
                   <p>Olá! Sou uma desenvolvedora <b>Front End </b>
-                  apaixonada por <b>UI/UX e design</b>. Me formei na
-                  <b> Escola de Tecnologia DNC</b>, onde concluí o
-                  curso <b>FullStack</b>. Tenho habilidades em criar
+                  apaixonada por <b>UI/UX e design</b>. Concluí o
+                  curso <b>FullStack</b> na
+                  <b> Escola de Tecnologia DNC</b>. Tenho habilidades em criar
                   interfaces intuitivas e esteticamente
                   agradáveis, utilizando meu conhecimento em
                   <b> HTML, CSS</b> e <b>JavaScript</b>. Estou sempre em

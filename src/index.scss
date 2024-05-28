@@ -30,8 +30,8 @@ html{
 }
 
 .switch{
-  margin-top: -48px;
-  padding-left: 200px;
+  margin-top: -52px;
+  padding-left: 280px;
 }
 
 .moon{
@@ -115,6 +115,10 @@ html{
 
   .center-underline::after{
     width: 150px;
+  }
+
+  .switch{
+    margin-top: -47px;
   }
 }
 
