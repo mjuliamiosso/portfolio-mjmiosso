@@ -17,7 +17,7 @@ const Projects = () => {
           <div className='projects-container-right'>
             <div className='project-container'>
               <Project image={WeatherApp}></Project>
-              <ProjectDescription title='Clima' text='Fiz este site para praticar a implementação de APIs, onde você pode ver o clima das cidades. O objetivo é desenvolver minhas habilidades em desenvolvimento web e integração de serviços, permitindo que os usuários obtenham informações meteorológicas em tempo real de diversas localidades.' github='https://github.com/mjuliamiosso/weather-app' deploy='https://mjuliamiosso.github.io/weather-app/'></ProjectDescription>
+              <ProjectDescription title='Weather-App' text='Fiz este site para praticar a implementação de APIs, onde você pode ver o clima das cidades. O objetivo é desenvolver minhas habilidades em desenvolvimento web e integração de serviços, permitindo que os usuários obtenham informações meteorológicas em tempo real de diversas localidades.' github='https://github.com/mjuliamiosso/weather-app' deploy='https://mjuliamiosso.github.io/weather-app/'></ProjectDescription>
             </div>
             <div className='project-container'>
               <Project image={SoonImgWide}></Project>
