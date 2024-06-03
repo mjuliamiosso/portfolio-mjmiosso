@@ -1,7 +1,7 @@
 import React from 'react'
 import Project from '../../components/Project'
 import './index.scss'
-import DncWeatherImg from '../../assets/dnc-weather.png'
+import WeatherApp from '../../assets/weather-app.png'
 import SoonImg from '../../assets/em-breve.png'
 import SoonImgWide from '../../assets/em-breve-wide.png'
 import ProjectDescription from '../../components/ProjectDescription'
@@ -16,8 +16,8 @@ const Projects = () => {
         <span className='right-underline'></span>
           <div className='projects-container-right'>
             <div className='project-container'>
-              <Project image={DncWeatherImg}></Project>
-              <ProjectDescription title='DncWeather' text='Desafio feito pela Escola DNC onde temos que desenvolver uma tela funcional com consumo de API.' github='https://github.com/mjuliamiosso/desafio-02-api?tab=readme-ov-file' deploy='https://mjuliamiosso.github.io/desafio-02-api/'></ProjectDescription>
+              <Project image={WeatherApp}></Project>
+              <ProjectDescription title='Clima' text='Fiz este site para praticar a implementação de APIs, onde você pode ver o clima das cidades. O objetivo é desenvolver minhas habilidades em desenvolvimento web e integração de serviços, permitindo que os usuários obtenham informações meteorológicas em tempo real de diversas localidades.' github='https://github.com/mjuliamiosso/weather-app' deploy='https://mjuliamiosso.github.io/weather-app/'></ProjectDescription>
             </div>
             <div className='project-container'>
               <Project image={SoonImgWide}></Project>
