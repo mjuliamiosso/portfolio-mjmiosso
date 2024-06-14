@@ -2,6 +2,7 @@ import React from 'react'
 import Project from '../../components/Project'
 import './index.scss'
 import WeatherApp from '../../assets/weather-app.png'
+import PokemonImg from '../../assets/pokemon-wide.png'
 import SoonImg from '../../assets/em-breve.png'
 import SoonImgWide from '../../assets/em-breve-wide.png'
 import ProjectDescription from '../../components/ProjectDescription'
@@ -20,8 +21,8 @@ const Projects = () => {
               <ProjectDescription title='Weather-App' text='Fiz este site para praticar a implementação de APIs, onde você pode ver o clima das cidades. O objetivo é desenvolver minhas habilidades em desenvolvimento web e integração de serviços, permitindo que os usuários obtenham informações meteorológicas em tempo real de diversas localidades.' github='https://github.com/mjuliamiosso/weather-app' deploy='https://mjuliamiosso.github.io/weather-app/'></ProjectDescription>
             </div>
             <div className='project-container'>
-              <Project image={SoonImgWide}></Project>
-              <ProjectDescription title='---' text='---' ></ProjectDescription>
+              <Project image={PokemonImg}></Project>
+              <ProjectDescription title='Pokédex' text='Criei esse site inspirado no Pokémon, utilizando uma API que permite aos usuários visualizar e pesquisar por Pokémons de maneira rápida e intuitiva. No site, você pode encontrar informações detalhadas sobre cada Pokémon, incluindo suas habilidades, tipos, evoluções e muito mais.' github='https://github.com/mjuliamiosso/pokedex' deploy='https://pokedex-tawny-nine.vercel.app/'></ProjectDescription>
             </div>
           </div>
           <div className='projects-container-left'>
