@@ -29,7 +29,7 @@ const Projects = () => {
           <div className='projects-container-left'>
             <div className='project-container'>
               <Project image={ArtGallery}></Project>
-              <ProjectDescription title='Galeria de Arte' text='Criei este site como uma plataforma para compartilhar minhas criações artísticas e, ao mesmo tempo, aprimorar minhas habilidades de desenvolvimento web.' github='https://github.com/mjuliamiosso/art-gallery' deploy='https://art-gallery-mjmiosso-1kewlc9nc-mjuliamiossos-projects.vercel.app/'></ProjectDescription>
+              <ProjectDescription title='Galeria de Arte' text='Criei este site como uma plataforma para compartilhar minhas criações artísticas e, ao mesmo tempo, aprimorar minhas habilidades de desenvolvimento web.' github='https://github.com/mjuliamiosso/art-gallery' deploy='https://art-gallery-mjmiosso.vercel.app/'></ProjectDescription>
             </div>
             <div className='project-container'>
               <Project image={SoonImg}></Project>
