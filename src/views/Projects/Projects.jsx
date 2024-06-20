@@ -3,6 +3,7 @@ import Project from '../../components/Project'
 import './index.scss'
 import WeatherApp from '../../assets/weather-app.png'
 import PokemonImg from '../../assets/pokemon-wide.png'
+import ArtGallery from '../../assets/art-gallery.png'
 import SoonImg from '../../assets/em-breve.png'
 import SoonImgWide from '../../assets/em-breve-wide.png'
 import ProjectDescription from '../../components/ProjectDescription'
@@ -27,7 +28,7 @@ const Projects = () => {
           </div>
           <div className='projects-container-left'>
             <div className='project-container'>
-              <Project image={SoonImgWide}></Project>
+              <Project image={ArtGallery}></Project>
               <ProjectDescription title='Galeria de Arte' text='Criei este site como uma plataforma para compartilhar minhas criações artísticas e, ao mesmo tempo, aprimorar minhas habilidades de desenvolvimento web.' github='https://github.com/mjuliamiosso/art-gallery' deploy='https://art-gallery-mjmiosso-1kewlc9nc-mjuliamiossos-projects.vercel.app/'></ProjectDescription>
             </div>
             <div className='project-container'>
