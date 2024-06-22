@@ -1,5 +1,5 @@
 import './index.scss'
-import Photo from '../../assets/photo.png'
+import Photo from '../../assets/perfil-site.png'
 import BtnLinks from '../../components/BtnLinks'
 import AutoPlayCarousel from '../../components/AutoPlayCarousel'
 import { FiGithub } from "react-icons/fi";
