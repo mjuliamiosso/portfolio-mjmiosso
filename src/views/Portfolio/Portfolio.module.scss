@@ -9,5 +9,6 @@
     @media (min-width: 641px) {
         grid-template-columns: 1fr 1fr 1fr;
         place-items: start;
+        gap: auto;
     }
 }

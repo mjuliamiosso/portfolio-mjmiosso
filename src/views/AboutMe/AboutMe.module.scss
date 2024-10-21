@@ -21,7 +21,10 @@
         border-radius: 100%;
         border: 4px solid $light-primary;
 
-        @media (min-width: 641px) {}
+        @media (min-width: 641px) {
+            max-width: 160px;
+            max-height: 160px;
+        }
     }
 
 }
@@ -48,6 +51,7 @@
 .text {
     text-align: center;
     color: $light-text;
+    font-size: 1.225rem;
 
     span {
         color: $light-primary;

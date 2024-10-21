@@ -7,7 +7,7 @@ import { IoMenu, IoMoon } from "react-icons/io5";
 const Navbar = () => {
 
   return (
-    <div className='coloredBackground'>
+    <div className={styles.stickyNav}>
       <nav className='container'>
         <a
           className={styles.logo}

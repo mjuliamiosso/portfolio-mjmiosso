@@ -1,12 +1,16 @@
 @import '../../sass/variables';
 @import '../../sass/mixins';
 
+.stickyNav{
+    border-bottom: 1px solid #7D063325;
+    background-color: $light-bg;
+    position: sticky;
+    top: 0;
+}
 nav {
     display: flex;
     justify-content: space-between;
     padding: 1.25rem !important;
-    border-bottom: 1px solid #7D063325;
-    position: sticky;
 
     .logo {
         font-size: $fs-300;
