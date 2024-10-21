@@ -1,0 +1,36 @@
+@import '../../sass/variables';
+
+header {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+h1 {
+  font-size: var(--fs-800);
+  text-align: center;
+  text-transform: uppercase;
+
+  span {
+    color: $light-primary;
+  }
+}
+
+h3 {
+  font-size: $fs-500;
+  font-weight: normal;
+
+  @media (min-width:641px) {
+    font-size: $fs-600;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
