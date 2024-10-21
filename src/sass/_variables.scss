@@ -17,11 +17,11 @@ $fs-500: 2rem; //32px
 $fs-600: 2.25rem; //36px
 
 :root {
-  --fs-700: 2.5rem;
-  --fs-800: 3rem;
+  --fs-700: 2.5rem; //40px
+  --fs-800: 3rem; //48px
 
   @media(min-width: 641px) {
-    --fs-700: 3rem;
-    --fs-800: 4rem;
+    --fs-700: 3rem; //48px
+    --fs-800: 4rem; //64px
   }
 }

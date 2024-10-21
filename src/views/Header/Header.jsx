@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <div
       id='header'
-      className='colored-bg'>
+      className='coloredBackground'>
       <header className='container'>
         <h1>Olá, sou <span>Maria Júlia Miosso</span></h1>
         <h3>Desenvolvedora Front-End</h3>
