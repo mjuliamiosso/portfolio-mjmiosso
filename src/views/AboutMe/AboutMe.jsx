@@ -9,7 +9,7 @@ const AboutMe = () => {
       id='aboutme'
       className='paddingSection'>
       <div className='container'>
-        <h2 className='subtitle '>
+        <h2 className='subtitle dashMd'>
           Sobre mim
         </h2>
         <div className={styles.aboutmeContainer}>

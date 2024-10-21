@@ -10,31 +10,31 @@ const Form = () => {
   return (
     <section id='contact' className='paddingSection'>
       <div className='container'>
-        <h2 className='subtitle'>Entre em contato</h2>
+        <h2 className='subtitle dashLg'>Entre em contato</h2>
         <div className={styles.cardContainer}>
           <ContactCard
             icon={<MdEmail />}
             title={'E-mail'}
             contact={'mjuliamiosso@gmail.com'}
-            link={'www.google.com.br'}
+            link={'mailto:mjuliamiosso@gmail.com'}
           />
           <ContactCard
             icon={<FaPhone />}
             title={'Telefone'}
             contact={'(12)98805-5373'}
-            link={'www.google.com.br'}
+            // link={''}
           />
           <ContactCard
             icon={<FaLinkedin />}
             title={'Linkedin'}
             contact={'Maria Júlia Miosso'}
-            link={'www.google.com.br'}
+            link={'https://www.linkedin.com/in/maria-julia-miosso/'}
           />
           <ContactCard
             icon={<FaGithub />}
             title={'Github'}
             contact={'mjuliamiosso'}
-            link={'www.google.com.br'}
+            link={'https://github.com/mjuliamiosso'}
           />
         </div>
       </div>

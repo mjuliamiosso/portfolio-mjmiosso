@@ -4,7 +4,10 @@ import styles from './ContactCard.module.scss'
 const ContactCard = ({ icon, title, contact, link }) => {
   return (
     <div className={styles.contactCard}>
-      <a href={link}>
+      <a
+        target="_blank"
+        href={link}
+      >
         <div className={styles.iconContainer}>
           <p className={styles.icon}>{icon}</p>
         </div>
