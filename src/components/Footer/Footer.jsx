@@ -1,11 +1,13 @@
 import React from 'react'
-import './index.scss'
+import styles from './Footer.module.scss'
 
 const Footer = () => {
   return (
-    <div className='footer'>
-      <p className='container'>©2024 Maria Júlia Miosso</p>
-    </div>
+    <footer className='coloredBackground'>
+      <p className='container'>
+        © 2024 Maria Júlia Miosso. Todos os direitos reservados.
+      </p>
+    </footer>
   )
 }
 
