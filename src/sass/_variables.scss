@@ -1,14 +1,9 @@
 //COLORS
-$light-text: #4A1E29;
+$light-text: #4a1e29;
 $light-bg: #F4F4F4;
-$light-midtone: #fff;
 $light-primary: #c64a54;
 $light-secondary: #ffa573;
 $light-accent: #eb5a6c;
-
-$dark-bg: #171717;
-$dark-midtone: #1b1b1b;
-$dark-text: #f4f4f4;
 
 //Typography
 $fs-300: 1.25rem; //20px
@@ -20,8 +15,20 @@ $fs-600: 2.25rem; //36px
   --fs-700: 2.5rem; //40px
   --fs-800: 3rem; //48px
 
+  --text-color: #4A1E29;
+  --background-color: #F4F4F4;
+  --midtone-color: #fff;
+  --primary-color: #c64a54;
+
   @media(min-width: 641px) {
     --fs-700: 3rem; //48px
     --fs-800: 4rem; //64px
   }
+}
+
+[data-theme='dark'] {
+  --text-color: #eeeeee;
+  --background-color: #171717;
+  --midtone-color: #1b1b1b;
+  --primary-color: #f4f4f4;
 }

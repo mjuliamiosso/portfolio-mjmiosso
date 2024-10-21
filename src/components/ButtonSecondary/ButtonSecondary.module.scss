@@ -2,7 +2,7 @@
 
 .buttonSecondary{
   font-size: $fs-400;
-  color: $light-text;
+  color: var(--text-color);
   background-color: #ffa57350;
   padding: 1.25rem 2.25rem;
   border: none;

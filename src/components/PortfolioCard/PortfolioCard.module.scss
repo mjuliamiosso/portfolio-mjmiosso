@@ -5,7 +5,7 @@
   height: 100%;
   width: 100%;
   padding: 20px;
-  background-color: $light-midtone;
+  background-color: var(--midtone-color);
   border-radius: 15px;
   box-shadow: 0 0 23px 0 #00000005;
 
@@ -27,7 +27,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: $light-text;
+  color: var(--text-color);
 
   p {
     font-size: 1.5rem;
@@ -40,13 +40,13 @@
 
     .icon {
       font-size: 1.3rem;
-      color: $light-text;
+      color: var(--text-color);
     }
   }
 }
 
 .description {
-  color: $light-text;
+  color: var(--text-color);
 }
 
 .languageList {
@@ -58,7 +58,7 @@
     padding: 5px 10px;
     border-radius: 7px;
     font-weight: bold;
-    color: $light-text;
+    color: var(--text-color);
   }
 
 }

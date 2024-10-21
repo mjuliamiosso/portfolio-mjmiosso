@@ -8,7 +8,7 @@ import { FaLinkedin, FaGithub  } from "react-icons/fa";
 const Form = () => {
 
   return (
-    <section id='contact' className='paddingSection'>
+    <section id='contact' className='paddingSection midtoneBackground'>
       <div className='container'>
         <h2 className='subtitle dashLg'>Entre em contato</h2>
         <div className={styles.cardContainer}>

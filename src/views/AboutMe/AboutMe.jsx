@@ -7,7 +7,7 @@ const AboutMe = () => {
   return (
     <section
       id='aboutme'
-      className='paddingSection'>
+      className='paddingSection midtoneBackground'>
       <div className='container'>
         <h2 className='subtitle dashMd'>
           Sobre mim
@@ -32,11 +32,17 @@ const AboutMe = () => {
             </p>
             <div className={styles.social}>
               <div className={styles.icons}>
-                <a href="">
+                <a
+                  target='_blank'
+                  href="https://github.com/mjuliamiosso"
+                >
                   <FaGithub
                     className={styles.icon} />
                 </a>
-                <a href="">
+                <a
+                  target='_blank'
+                  href="https://www.linkedin.com/in/maria-julia-miosso/"
+                >
                   <FaLinkedin
                     className={styles.icon} />
                 </a>

@@ -45,12 +45,12 @@
 .name {
     font-size: $fs-500;
     font-weight: bold;
-    color: $light-text;
+    color: var(--text-color);
 }
 
 .text {
     text-align: center;
-    color: $light-text;
+    color: var(--text-color);
     font-size: 1.225rem;
 
     span {
@@ -73,8 +73,8 @@
     }
 
     .icon {
-        width: 20px;
-        height: 20px;
+        width: 25px;
+        height: 25px;
         color: $light-primary;
     }
 }

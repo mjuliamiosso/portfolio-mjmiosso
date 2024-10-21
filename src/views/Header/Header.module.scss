@@ -14,7 +14,7 @@ h1 {
   font-size: var(--fs-800);
   text-align: center;
   text-transform: uppercase;
-  color: $light-text;
+  color: var(--text-color);
 
   span{
     color: $light-primary;
@@ -24,7 +24,7 @@ h1 {
 h3 {
   font-size: $fs-500;
   font-weight: normal;
-  color: $light-text;
+  color: var(--text-color);
 
   @media (min-width:641px) {
     font-size: $fs-600;
