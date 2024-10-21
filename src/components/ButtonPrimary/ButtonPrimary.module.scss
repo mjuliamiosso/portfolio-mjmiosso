@@ -1,0 +1,12 @@
+@import '../../sass/variables';
+
+.buttonPrimary{
+  font-size: $fs-400;
+  color: $light-bg;
+  background-color: $light-primary;
+  padding: .75rem 1rem;
+  border: none;
+  border-radius: 10px;
+  font-weight: 400;
+  cursor: pointer;
+}
