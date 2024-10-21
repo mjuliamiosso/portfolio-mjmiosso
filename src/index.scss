@@ -34,3 +34,17 @@ html {
     max-width: 1440px;
   }
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: var(--background-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: $light-accent; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $light-primary; 
+}
