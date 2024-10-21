@@ -1,0 +1,51 @@
+@import '../../sass/variables';
+@import '../../sass/mixins';
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25rem !important;
+    border-bottom: 1px solid #7D063325;
+    position: sticky;
+
+    .logo {
+        font-size: $fs-300;
+        font-weight: bold;
+        color: $light-primary;
+    }
+
+    .items {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .icons {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            color: $light-primary;
+
+            .icon{
+                width: 30px;
+                height: 30px;
+                cursor: pointer;
+            }
+            
+            .menu{
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+    font-size: $fs-300;
+
+    a {
+        color: $light-primary;
+    }
+
+}
