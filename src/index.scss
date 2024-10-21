@@ -1,144 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import './sass/variables';
+@import './sass/mixins';
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  font-family: "Roboto", sans-serif;
   text-decoration: none;
   list-style: none;
+  color: $light-text;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
-.container{
-  max-width: 428px;
+.container {
+  max-width: 640px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding: 0 20px;
 }
 
-.switch-container{
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 10;
-}
-
-.switch{
-  margin-top: -52px;
-  padding-left: 280px;
-}
-
-.moon{
-  color: $light-bg;
-  margin-top: 5px;
-  margin-left: 8px;
-}
-
-.sun{
-  color: $dark-bg;
-  margin-top: 5px;
-  margin-left: 8px;
-}
-
-.left-underline::after{
-  content: '';
-  display: block;
-  width: 80px;
-  padding-top: 3px;
-}
-
-#light .left-underline::after{
-  border-bottom: 5px solid $light-orange;
-}
-
-#dark .left-underline::after{
-  border-bottom: 5px solid $dark-orange;
-}
-
-.right-underline::after{
-  content: '';
-  display: block;
-  float: right;
-  margin-top: -65px;
-
-  width: 60px;
-}
-
-#light .right-underline::after{
-  border-bottom: 5px solid $light-orange;
-}
-
-#dark .right-underline::after{
-  border-bottom: 5px solid $dark-orange;
-}
-
-.center-underline::after{
-  content: '';
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-
-  width: 130px;
-  padding-top: 3px;
-}
-
-#light .center-underline::after{
-  border-bottom: 5px solid $light-orange;
-}
-
-#dark .center-underline::after{
-  border-bottom: 5px solid $dark-orange;
-}
-
-
-@media (min-width: 1024px){
-  .container{
+@media (min-width: 641px) {
+  .container {
     max-width: 1024px;
   }
-  .switch{
-    padding-left: 650px;
-  }
-
-  .left-underline::after{
-    width: 90px;
-  }
-
-  .right-underline::after{
-    width: 75px;
-  }
-
-  .center-underline::after{
-    width: 150px;
-  }
-
-  .switch{
-    margin-top: -47px;
-  }
 }
 
-@media (min-width: 1440px){
-  .container{
+@media (min-width: 1025px) {
+  .container {
     max-width: 1440px;
-  }
-  .switch{
-    padding-left: 1020px;
-  }
-
-  .left-underline::after{
-    width: 110px;
-  }
-
-  .right-underline::after{
-    width: 85px;
-  }
-
-  .center-underline::after{
-    width: 180px;
   }
 }
