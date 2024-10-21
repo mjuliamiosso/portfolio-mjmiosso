@@ -1,24 +1,33 @@
 import React from 'react'
-import './index.scss'
-import BtnPurple from '../../components/BtnPurple'
-import BtnWhite from '../../components/BtnWhite'
-import { Fade } from "react-awesome-reveal";
-import cv from '../../assets/MARIA-JULIA-MIOSSO.pdf'
+import styles from './Header.module.scss'
+import ButtonPrimary from '../../components/ButtonPrimary/ButtonPrimary'
+import ButtonSecondary from '../../components/ButtonSecondary/ButtonSecondary'
+import CV from '../../assets/MARIA-JULIA-MIOSSO.pdf'
 
 const Header = () => {
   return (
-    <div id='header' className='header'>
-      <div className='container'>
-        <Fade direction='left'>
-          <p>Olá, sou</p>
-          <h1>Maria Júlia Miosso</h1>
-          <p>Desenvolvedora Front-End</p>
-          <div className='header-btn'>
-            <a href={cv} download="MARIA-JULIA-MIOSSO"><BtnPurple text='Download CV'></BtnPurple></a>
-            <a href="#form"><BtnWhite text='Entre em contato'></BtnWhite></a>
-          </div>
-        </Fade>
-      </div>
+    <div
+      id='header'
+      className='coloredBackground'>
+      <header className='container'>
+        <h1>Olá, sou <span>Maria Júlia Miosso</span></h1>
+        <h3>Desenvolvedora Front-End</h3>
+        <div className={styles.buttons}>
+          <a
+            href={CV}
+            download="MARIA-JULIA-MIOSSO">
+            <ButtonSecondary
+              text='Download CV'>
+            </ButtonSecondary>
+          </a>
+          <a
+            href="#form">
+            <ButtonPrimary
+              text='Entre em contato'>
+            </ButtonPrimary>
+          </a>
+        </div>
+      </header>
     </div>
   )
 }

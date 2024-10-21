@@ -1,0 +1,64 @@
+@import '../../sass/variables';
+
+.portfolioCard {
+  max-width: 500px;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--midtone-color);
+  border-radius: 15px;
+  box-shadow: 0 0 23px 0 #00000005;
+
+  img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.titleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-color);
+
+  p {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .icons {
+    display: flex;
+    gap: 10px;
+
+    .icon {
+      font-size: 1.3rem;
+      color: var(--text-color);
+    }
+  }
+}
+
+.description {
+  color: var(--text-color);
+}
+
+.languageList {
+  display: flex;
+  gap: 15px;
+
+  .languageItem {
+    background-color: #ffa57320;
+    padding: 5px 10px;
+    border-radius: 7px;
+    font-weight: bold;
+    color: var(--text-color);
+  }
+
+}

@@ -1,0 +1,18 @@
+@import '../../sass/_variables';
+@import '../../sass/_mixins';
+
+.cardContainer{
+    display: grid;
+    place-items: center;
+    gap: 20px;
+
+    @media (min-width: 641px) {
+        grid-template-columns: repeat(2, 1fr);
+        place-items: start;
+        gap: auto;
+    }
+
+    @media (min-width:1024px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
