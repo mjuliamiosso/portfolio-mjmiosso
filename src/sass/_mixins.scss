@@ -1,11 +1,80 @@
-@mixin flex-spacebetween{
+@import './variables';
+
+@mixin flex-spacebetween {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-@mixin flex-center{
+@mixin flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.coloredBackground {
+    background-color: var(--background-color);
+}
+
+.midtoneBackground {
+    background-color: var(--midtone-color);
+}
+
+.paddingSection {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.subtitle {
+    font-size: var(--fs-700);
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--text-color);
+    position: relative;
+}
+
+.dashSm:after {
+    content: '';
+    position: absolute;
+    left: 41%;
+    bottom: 0;
+    border: 3px solid $light-accent;
+    border-radius: 10px;
+    width: 18%;
+
+    @media (min-width:641px) {
+        width: 7%;
+        left: 46%;
+    }
+}
+
+.dashMd:after {
+    content: '';
+    position: absolute;
+    left: 37%;
+    bottom: 0;
+    border: 3px solid $light-accent;
+    border-radius: 10px;
+    width: 25%;
+
+    @media (min-width: 641px) {
+        width: 10%;
+        left: 45%;
+    }
+}
+
+.dashLg:after {
+    content: '';
+    position: absolute;
+    left: 30%;
+    bottom: 0;
+    border: 3px solid $light-accent;
+    border-radius: 10px;
+    width: 41%;
+
+    @media (min-width: 641px) {
+        width: 14%;
+        left: 43%;
+
+    }
 }
