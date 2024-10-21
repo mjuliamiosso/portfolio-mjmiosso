@@ -1,0 +1,11 @@
+@import '../../sass/_variables';
+
+.cardContainer{
+    display: grid;
+    place-items: center;
+    gap: 30px;
+
+    @media (min-width: 641px){
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}

@@ -10,7 +10,7 @@ const AboutMe = () => {
       className='paddingSection'>
       <div className='container'>
         <h2 className='subtitle '>
-          Sobre Mim
+          Sobre mim
         </h2>
         <div className={styles.aboutmeContainer}>
           <img

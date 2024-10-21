@@ -3,6 +3,7 @@ import Header from './views/Header/Header'
 import Navbar from './components/Navbar/Navbar'
 import AboutMe from './views/AboutMe/AboutMe'
 import Portfolio from './views/Portfolio/Portfolio'
+import Contact from './views/Contact/Contact'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <Header />
       <AboutMe />
       <Portfolio />
+      <Contact />
     </div>
   )
 }
