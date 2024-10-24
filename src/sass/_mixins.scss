@@ -1,17 +1,5 @@
 @import './variables';
 
-@mixin flex-spacebetween {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-@mixin flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .coloredBackground {
     background-color: var(--background-color);
 }

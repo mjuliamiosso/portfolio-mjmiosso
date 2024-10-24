@@ -3,7 +3,7 @@ import styles from './Footer.module.scss'
 
 const Footer = () => {
   return (
-    <footer className='coloredBackground'>
+    <footer className={styles.footer}>
       <p className='container'>
         © 2024 Maria Júlia Miosso. Todos os direitos reservados.
       </p>

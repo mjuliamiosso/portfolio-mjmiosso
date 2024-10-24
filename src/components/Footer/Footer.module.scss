@@ -1,6 +1,7 @@
 @import '../../sass/_variables';
 
-footer{
+.footer{
+  background-color: var(--background-color);
   color: var(--text-color);
   text-align: center;
   padding: 1.75rem;
