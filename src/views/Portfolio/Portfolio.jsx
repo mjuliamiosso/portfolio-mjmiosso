@@ -13,10 +13,18 @@ const Portfolio = () => {
         </h2>
         <div className={styles.cardContainer}>
           <PorfolioCard
+            image={'./overdle.png'}
+            title={'Overdle'}
+            description={"Em construção..."}
+            languages={["Next.js", 'SASS', 'TypeScript', 'PostgreSQL', 'Prisma']}
+            gitHub={'https://github.com/mjuliamiosso/overdle'}
+          // deploy={'#'}
+          />
+          <PorfolioCard
             image={'./logum-rh.png'}
             title={'Logum RH'}
             description={"Em construção..."}
-            languages={["Next.js", 'SASS', 'TypeScript',  'SpringBoot', 'Java', 'PostgreSQL']}
+            languages={["Next.js", 'SASS', 'TypeScript', 'SpringBoot', 'Java', 'PostgreSQL']}
             gitHub={'https://github.com/mjuliamiosso/logumrh'}
           // deploy={'#'}
           />
