@@ -30,7 +30,7 @@ const Portfolio = () => {
           />
           <PorfolioCard
             image={'./niloware.png'}
-            title={'Logum RH'}
+            title={'Niloware'}
             description={"Em construção..."}
             languages={["Next.js", 'SASS', 'TypeScript']}
             gitHub={'https://github.com/mjuliamiosso/logumrh'}
