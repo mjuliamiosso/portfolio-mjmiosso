@@ -18,7 +18,7 @@ const Portfolio = () => {
             description={"Em construção..."}
             languages={["Next.js", 'SASS', 'TypeScript', 'PostgreSQL', 'Prisma']}
             gitHub={'https://github.com/mjuliamiosso/overdle'}
-            deploy={'https://overdle-daily.vercel.app'}
+            deploy={'https://overdle.vercel.app/'}
           />
           <PorfolioCard
             image={'./logum-rh.png'}
