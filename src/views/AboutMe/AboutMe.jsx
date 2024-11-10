@@ -28,7 +28,12 @@ const AboutMe = () => {
               </span>
             </p>
             <p className={styles.text}>
-              Olá! Sou uma desenvolvedora Front End apaixonada por UI/UX e design. Concluí o curso FullStack na Escola de Tecnologia DNC. Tenho habilidades em criar interfaces intuitivas e esteticamente agradáveis, utilizando meu conhecimento em HTML, CSS e JavaScript. Estou sempre em busca de aprimoramento e novos desafios para continuar crescendo profissionalmente.
+              Olá! Estou atualmente no primeiro semestre de Análise e Desenvolvimento de Sistemas na Uninter. Desde junho, tenho trabalhado como freelancer, o que me permite ganhar experiência prática e desafiar-me com projetos variados. Além disso, dedico tempo a desenvolver projetos pessoais, pois gosto de aprender e explorar novas ferramentas e tecnologias.
+
+              <br></br>
+              <br></br>
+
+              Com essa base de conhecimento e a motivação para crescer profissionalmente, estou à procura de uma oportunidade de emprego onde possa contribuir e aprender ainda mais. Quero colocar em prática as minhas habilidades e contribuir para o sucesso de uma equipe, enquanto procuro aprender e evoluir com cada novo desafio na área tecnológica.
             </p>
             <div className={styles.social}>
               <div className={styles.icons}>
