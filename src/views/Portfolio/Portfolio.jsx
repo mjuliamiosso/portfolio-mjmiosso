@@ -18,15 +18,7 @@ const Portfolio = () => {
             description={"Em construção..."}
             languages={["Next.js", 'SASS', 'TypeScript', 'PostgreSQL', 'Prisma']}
             gitHub={'https://github.com/mjuliamiosso/overdle'}
-            deploy={'https://overdle.vercel.app/'}
-          />
-          <PorfolioCard
-            image={'./logum-rh.png'}
-            title={'Logum RH'}
-            description={"Em construção..."}
-            languages={["Next.js", 'SASS', 'TypeScript', 'SpringBoot', 'Java', 'PostgreSQL']}
-            gitHub={'https://github.com/mjuliamiosso/logumrh'}
-          // deploy={'#'}
+            // deploy={'https://overdle.vercel.app/'}
           />
           <PorfolioCard
             image={'./niloware.png'}
