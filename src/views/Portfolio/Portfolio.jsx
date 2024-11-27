@@ -15,7 +15,7 @@ const Portfolio = () => {
           <PorfolioCard
             image={'./overdle.png'}
             title={'Overdle'}
-            description={"Em construção..."}
+            description={"Overdle é um jogo inspirado em desafios diários como Lodle, Pokedle e Smashdle. Ele conta com quatro modos diferentes, cada um oferecendo uma dica única para ajudar os jogadores a adivinhar o personagem do dia."}
             languages={["Next.js", 'SASS', 'TypeScript', 'PostgreSQL', 'Prisma']}
             gitHub={'https://github.com/mjuliamiosso/overdle'}
             // deploy={'https://overdle.vercel.app/'}
