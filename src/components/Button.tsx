@@ -3,7 +3,7 @@ import type { FC, ReactNode } from "react";
 
 interface ButtonProps {
   children: ReactNode;
-  variant?: "default" | "outlined";
+  variant?: "default" | "outlined" | "gradient";
 }
 
 const Button: FC<ButtonProps> = ({ children, variant = "default" }) => {
@@ -16,6 +16,8 @@ const Button: FC<ButtonProps> = ({ children, variant = "default" }) => {
             variant === "default",
           "bg-white text-[var(--color-primary)] border-[var(--color-primary)] hover:bg-[var(--color-primary)] hover:text-white":
             variant === "outlined",
+          "bg-gradient-to-r from-[#9b5de5] to-[#706dff] text-white border-none":
+            variant === "gradient",
         }
       )}
     >
