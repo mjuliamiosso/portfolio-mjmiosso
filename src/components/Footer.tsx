@@ -9,9 +9,19 @@ const Footer = () => {
         <p className="uppercase text-[var(--color-primary)] font-bold text-2xl">
           MJMiosso
         </p>
-        <div className="flex flex-col items-center gap-5 text-[var(--color-text-primary)] text-base lg:flex-row">
-          <p>(12) 9 8805-5373</p>
-          <a href="mailto:mjuliamiosso@gmail.com" target="_blank">
+        <div className="flex flex-col font-medium items-center gap-5 text-[var(--color-text-primary)] text-base lg:flex-row">
+          <a
+            className="hover:text-[var(--color-primary)] transition"
+            href="https://wa.me/5512988055373"
+            target="_blank"
+          >
+            (12) 9 8805-5373
+          </a>
+          <a
+            className="hover:text-[var(--color-primary)] transition"
+            href="mailto:mjuliamiosso@gmail.com"
+            target="_blank"
+          >
             mjuliamiosso@gmail.com
           </a>
           {/* Icones */}

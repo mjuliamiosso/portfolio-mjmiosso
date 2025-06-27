@@ -5,17 +5,24 @@
   font-family: "Poppins", sans-serif;
 }
 
-:root{
-    /* Cores */
-    --color-text-primary: #222225;
-    --color-text-light: rgb(34, 34, 37, .5);
-    --color-primary: #9b5de5;
-    --color-secondary: #706dff;
-    --color-primary-dark: #8b49da;
-    --color-primary-light: rgb(155, 93, 229, .2);
-    --color-primary-ghost: rgb(155, 93, 229, .03);
+:root {
+  /* Cores */
+  --color-text-primary: #222225;
+  --color-text-light: rgb(34, 34, 37, 0.5);
+  --color-primary: #9b5de5;
+  --color-secondary: #706dff;
+  --color-primary-dark: #8b49da;
+  --color-primary-light: rgb(155, 93, 229, 0.2);
+  --color-primary-ghost: rgb(155, 93, 229, 0.03);
 }
 
-.transition{
+.transition {
   transition: all 200ms ease-in-out;
+}
+
+@media (min-width: 1024px) {
+  .verticalText {
+    writing-mode: vertical-rl;
+    rotate: 180deg;
+  }
 }

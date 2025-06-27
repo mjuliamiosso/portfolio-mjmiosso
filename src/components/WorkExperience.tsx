@@ -1,5 +1,12 @@
 import { useState } from "react";
 
+interface Experience {
+  company: string;
+  title: string;
+  date: string;
+  description: string;
+}
+
 const experiences: Experience[] = [
   {
     company: "Niloware",
@@ -29,9 +36,10 @@ const WorkExperience = () => {
           <button
             key={index}
             onClick={() => setActiveIndex(index)}
+            aria-pressed={index === activeIndex}
             className={`px-3 py-2 rounded-md text-base font-medium transition cursor-pointer text-left ${
               index === activeIndex
-                ? "bg-[var(--color-primary-light)] text-[var(--color-primary)]"
+                ? "bg-[var(--color-primary-light)] text-[var(--color-primary)] font-bold"
                 : "border-[var(--color-primary)] text-[var(--color-text-primary)] hover:text-[var(--color-primary)]"
             }`}
           >
