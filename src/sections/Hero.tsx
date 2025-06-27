@@ -1,0 +1,27 @@
+import Button from "../components/Button";
+
+const Hero = () => {
+  return (
+    <section className="bgHero">
+      <div className="container mx-auto flex flex-col text-center items-center gap-10 h-screen justify-center lg:items-start lg:text-left">
+        <div>
+          <p className="text-base text-[var(--color-text-primary)]">
+            Olá! Sou Maria Júlia
+          </p>
+          <h1 className="text-[2rem] font-bold text-[var(--color-primary)] mt-[-10px] lg:text-[2.5rem]">
+            Desenvolvedora Front End
+          </h1>
+        </div>
+        <p className="text-xl text-[var(--color-text-primary)]">
+          Desenvolvo soluções web com foco em usabilidade e resultado.
+        </p>
+        <div className="flex gap-3">
+          <Button variant="gradient">Entrar em contato</Button>
+          <Button variant="outlined">Download CV</Button>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;

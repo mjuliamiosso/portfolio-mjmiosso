@@ -26,3 +26,10 @@
     rotate: 180deg;
   }
 }
+
+.bgHero {
+  background-image: url("./assets/bg-hero.jpg");
+  background-repeat: norepeat;
+  background-position: bottom;
+  background-size: cover;
+}
