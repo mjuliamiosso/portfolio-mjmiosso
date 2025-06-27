@@ -1,10 +1,15 @@
-function App() {
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Projects from "./components/Projects";
 
+function App() {
   return (
     <>
-      <h1>Bom dia!</h1>
+      <Header />
+      <Projects />
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
