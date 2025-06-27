@@ -15,3 +15,7 @@
     --color-primary-light: rgb(155, 93, 229, .2);
     --color-primary-ghost: rgb(155, 93, 229, .03);
 }
+
+.transition{
+  transition: all 200ms ease-in-out;
+}
