@@ -5,6 +5,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 :root {
   /* Cores */
   --color-text-primary: #222225;
@@ -20,16 +24,30 @@
   transition: all 200ms ease-in-out;
 }
 
-@media (min-width: 1024px) {
-  .verticalText {
-    writing-mode: vertical-rl;
-    rotate: 180deg;
-  }
-}
-
 .bgHero {
   background-image: url("./assets/bg-hero.jpg");
   background-repeat: norepeat;
   background-position: bottom;
   background-size: cover;
+}
+
+.sectionHeading {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: var(--color-text-primary);
+}
+
+.sectionSpacing{
+  padding: 80px 0;
+}
+
+@media (min-width: 1024px) {
+  .verticalText {
+    writing-mode: vertical-rl;
+    rotate: 180deg;
+  }
+
+  .sectionHeading {
+    font-size: 2rem;
+  }
 }

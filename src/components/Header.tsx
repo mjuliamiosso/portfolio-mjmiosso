@@ -7,7 +7,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="">
+    <header className=" absolute w-full">
       <div className="container mx-auto flex items-center justify-between py-3 relative">
         <p className="uppercase text-[var(--color-primary)] font-bold text-2xl">
           MJmiosso
