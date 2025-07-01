@@ -12,7 +12,7 @@ const Header = () => {
     <header
       className={`w-full transition-all duration-300 ${
         scrolled
-          ? "fixed top-0 bg-white z-50"
+          ? "fixed top-0 backdrop-blur-sm z-50"
           : "absolute bg-transparent"
       }`}
     >
