@@ -66,10 +66,10 @@ const projectsPessoais = [
 const Portfolio = () => {
   return (
     <section className="container mx-auto sectionSpacing flex flex-col gap-10">
-      <h2 className="sectionHeading">Portfólio</h2>
+      <h2 className="sectionHeading px-5 ">Portfólio</h2>
 
       {/* Profissionais */}
-      <div className="flex flex-col gap-5">
+      <div className="flex flex-col gap-5 px-5">
         <h3 className="text-xl font-medium text-[var(--color-primary)]">
           Projetos Profissionais
         </h3>
@@ -77,7 +77,7 @@ const Portfolio = () => {
       </div>
 
       {/* Pessoais */}
-      <div className="flex flex-col gap-5">
+      <div className="flex flex-col gap-5 px-5">
         <h3 className="text-xl font-medium text-[var(--color-primary)]">
           Projetos Pessoais
         </h3>

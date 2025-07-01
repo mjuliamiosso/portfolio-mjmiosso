@@ -3,7 +3,7 @@ import Button from "../components/Button";
 const Hero = () => {
   return (
     <section className="bgHero">
-      <div className="container mx-auto flex flex-col text-center items-center gap-7 h-screen justify-center lg:items-start lg:text-left">
+      <div className="px-5 container mx-auto flex flex-col text-center items-center gap-7 h-screen justify-center lg:items-start lg:text-left">
         <div>
           <p className="text-base text-[var(--color-text-primary)]">
             Olá! Sou Maria Júlia

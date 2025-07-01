@@ -28,8 +28,10 @@ const WorkExperience = () => {
   return (
     <section id="workExperience" className="bg-[var(--color-primary-ghost)]">
       <div className="container mx-auto sectionSpacing flex flex-col gap-10">
-        <h2 className="sectionHeading">Experiências</h2>
-        <JobExperience experiences={experiences} />
+        <h2 className="sectionHeading px-5">Experiências</h2>
+        <div className="px-5 ">
+          <JobExperience experiences={experiences} />
+        </div>
       </div>
     </section>
   );
