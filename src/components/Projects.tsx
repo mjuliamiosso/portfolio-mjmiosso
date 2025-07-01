@@ -49,7 +49,7 @@ const Projects = ({ projects }: ProjectsProps) => {
 
           {/* Width full não está funcionando */}
           {activeIndex === index && (
-            <div className="flex flex-col items-center mt-2 bg-[var(--color-primary-ghost)] p-6 lg:flex-row lg:items-start lg:mt-0 lg:ml-2 flex-1">
+            <div className="flex flex-col items-center mt-2 bg-[var(--color-primary-ghost)] p-6 lg:flex-row lg:items-start lg:mt-0 lg:ml-2 flex-1 gap-5">
               {/* Imagem */}
               <img
                 src={project.image}
