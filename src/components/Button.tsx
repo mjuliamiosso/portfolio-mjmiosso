@@ -16,7 +16,7 @@ const Button: FC<ButtonProps> = ({ children, variant = "default" }) => {
             variant === "default",
           "bg-transparent text-[var(--color-primary)] border-[var(--color-primary)] hover:bg-[var(--color-primary)] hover:text-white":
             variant === "outlined",
-          "bg-gradient-to-r from-[#9b5de5] to-[#706dff] text-white border-none":
+          "bg-gradient-to-r from-[#9b5de5] to-[#706dff] text-white border-none px-[18px] py-2.5":
             variant === "gradient",
         }
       )}
