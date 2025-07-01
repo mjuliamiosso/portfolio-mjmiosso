@@ -4,6 +4,7 @@ import Hero from "./sections/Hero";
 import AboutMe from "./sections/AboutMe";
 import WorkExperience from "./sections/WorkExperience";
 import Portfolio from "./sections/Portfolio";
+import BackToTop from "./components/BackToTop";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <WorkExperience />
       <Portfolio />
       <Footer />
+      <BackToTop />
     </>
   );
 }
