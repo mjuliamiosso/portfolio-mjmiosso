@@ -16,8 +16,15 @@ const Hero = () => {
           Desenvolvo soluções web com foco em usabilidade e resultado.
         </p>
         <div className="flex gap-3">
-          <Button variant="gradient">Entrar em contato</Button>
-          <Button variant="outlined">Download CV</Button>
+          <a href="#footer">
+            <Button variant="gradient">Entrar em contato</Button>
+          </a>
+          <a
+            href="./maria-julia-miosso.pdf"
+            download="Maria Júlia Miosso"
+          >
+            <Button variant="outlined">Download CV</Button>
+          </a>
         </div>
       </div>
     </section>
