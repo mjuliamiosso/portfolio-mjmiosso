@@ -1,12 +1,16 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Projects from "./components/Projects";
+import Hero from "./sections/Hero";
+import AboutMe from "./sections/AboutMe";
+import WorkExperience from "./sections/WorkExperience";
 
 function App() {
   return (
     <>
       <Header />
-      <Projects />
+      <Hero />
+      <AboutMe />
+      <WorkExperience />
       <Footer />
     </>
   );
