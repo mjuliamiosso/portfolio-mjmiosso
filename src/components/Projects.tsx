@@ -15,7 +15,8 @@ interface ProjectsProps {
 }
 
 const Projects = ({ projects }: ProjectsProps) => {
-  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  const [activeIndex, setActiveIndex] = useState<number | null>(0);
+  
 
   const toggleProject = (index: number) => {
     setActiveIndex((prev) => (prev === index ? null : index));
