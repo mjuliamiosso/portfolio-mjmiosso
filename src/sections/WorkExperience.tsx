@@ -13,14 +13,14 @@ const experiences = [
     title: "Desenvolvedor Web",
     date: "Mar 2022 — Jul 2022",
     description:
-      "Desenvolvimento de sites personalizados, otimização de SEO e melhorias em desempenho para clientes diversos.",
+      "Desenvolvimento de sites personalizados, otimização de SEAtuei inicialmente como Técnica de Suporte de TI, sendo responsável pela manutenção e operação de sistemas, incluindo tarefas como limpeza de equipamentos, formatação de computadores, instalação de impressoras e solução de problemas de hardware e software. Utilizava o sistema Ocomon para gerenciar chamados e oferecer suporte eficiente aos setores de Infraestrutura, Administração e Educação. Essa função fortaleceu minhas habilidades de resolução de problemas, otimizando o desempenho dos sistemas e contribuindo para a continuidade dos serviços e a satisfação dos usuários.\n\n Após me destacar no suporte técnico, fui transferida para a área de Desenvolvimento, onde atuei como estagiária por 3 meses. Nesse período, trabalhei com HTML, CSS e PHP na manutenção de sites e aplicações web da Prefeitura, corrigindo erros, otimizando funcionalidades e garantindo a estabilidade dos sistemas. Essa experiência ampliou minha base técnica, exigiu rápida adaptação e reforçou minha capacidade de atuar em ambientes dinâmicos com foco em eficiência e qualidade.O e melhorias em desempenho para clientes diversos.",
   },
   {
     company: "Aventyrs RPG",
     title: "Ilustradora",
     date: "Out 2019 — Fev 2021",
     description:
-      "Desenvolvimento de sites personalizados, otimização de SEO e melhorias em desempenho para clientes diversos.",
+      "Atuei como ilustradora digital em um projeto de RPG de fantasia, onde fui responsável pela criação de mais de 20 personagens e cenários únicos. Trabalhei em estreita colaboração com a equipe criativa, participando ativamente das reuniões de concepção para definir estilos visuais, paletas de cores e atmosferas que ajudassem a dar vida ao universo do jogo. Utilizei ferramentas como Adobe Photoshop e Clip Studio Paint para criar composições visualmente impactantes, mantendo a consistência com a narrativa e o tom do projeto. Essa experiência me permitiu desenvolver uma forte sensibilidade estética e uma abordagem cuidadosa ao storytelling visual.",
   },
 ];
 
@@ -28,8 +28,10 @@ const WorkExperience = () => {
   return (
     <section id="workExperience" className="bg-[var(--color-primary-ghost)]">
       <div className="container mx-auto sectionSpacing flex flex-col gap-10">
-        <h2 className="sectionHeading">Experiências</h2>
-        <JobExperience experiences={experiences} />
+        <h2 className="sectionHeading px-5">Experiências</h2>
+        <div className="px-5 ">
+          <JobExperience experiences={experiences} />
+        </div>
       </div>
     </section>
   );

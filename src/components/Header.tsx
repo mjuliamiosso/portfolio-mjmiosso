@@ -2,13 +2,21 @@ import { useState } from "react";
 import Button from "./Button";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { IoClose } from "react-icons/io5";
+import useScrollAwareness from "../hooks/useScroll";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const scrolled = useScrollAwareness({ threshold: 80 });
 
   return (
-    <header className=" absolute w-full">
-      <div className="container mx-auto flex items-center justify-between py-3 relative">
+    <header
+      className={`w-full transition-all duration-300 ${
+        scrolled
+          ? "fixed top-0 backdrop-blur-sm z-50"
+          : "absolute bg-transparent"
+      }`}
+    >
+      <div className="px-5 container mx-auto flex items-center justify-between py-3 relative">
         <p className="uppercase text-[var(--color-primary)] font-bold text-2xl">
           MJmiosso
         </p>

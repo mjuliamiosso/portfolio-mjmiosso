@@ -5,7 +5,7 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer id="footer" className="bg-[var(--color-primary-ghost)]">
-      <div className="container mx-auto flex flex-col items-center gap-10 py-20  lg:flex-row lg:justify-between">
+      <div className="px-5 container mx-auto flex flex-col items-center gap-10 py-20  lg:flex-row lg:justify-between">
         <p className="uppercase text-[var(--color-primary)] font-bold text-2xl">
           MJMiosso
         </p>

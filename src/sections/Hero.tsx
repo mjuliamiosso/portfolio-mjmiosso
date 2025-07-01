@@ -3,7 +3,7 @@ import Button from "../components/Button";
 const Hero = () => {
   return (
     <section className="bgHero">
-      <div className="container mx-auto flex flex-col text-center items-center gap-7 h-screen justify-center lg:items-start lg:text-left">
+      <div className="px-5 container mx-auto flex flex-col text-center items-center gap-7 h-screen justify-center lg:items-start lg:text-left">
         <div>
           <p className="text-base text-[var(--color-text-primary)]">
             Olá! Sou Maria Júlia
@@ -16,8 +16,15 @@ const Hero = () => {
           Desenvolvo soluções web com foco em usabilidade e resultado.
         </p>
         <div className="flex gap-3">
-          <Button variant="gradient">Entrar em contato</Button>
-          <Button variant="outlined">Download CV</Button>
+          <a href="#footer">
+            <Button variant="gradient">Entrar em contato</Button>
+          </a>
+          <a
+            href="./maria-julia-miosso.pdf"
+            download="Maria Júlia Miosso"
+          >
+            <Button variant="outlined">Download CV</Button>
+          </a>
         </div>
       </div>
     </section>

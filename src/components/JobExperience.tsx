@@ -38,13 +38,16 @@ const JobExperience = ({ experiences }: JobExperienceProps) => {
       {/* Conteúdo da experiência */}
       <div className="flex-1 space-y-5">
         <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center">
-          <p className="text-xl font-bold text-[var(--color-text-primary)]">
+          {/* Título */}
+          <p className="text-xl font-bold text-[var(--color-primary)]">
             {active.title}
           </p>
+          {/* Data */}
           <p className="text-sm text-[var(--color-text-light)]">
             {active.date}
           </p>
         </div>
+        {/* Descrição */}
         {active.description.split("\n").map((line, i) => (
           <p key={i} className="text-base text-[var(--color-text-primary)]">
             {line}

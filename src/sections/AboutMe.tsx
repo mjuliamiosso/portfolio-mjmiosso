@@ -17,9 +17,9 @@ const technologies = [
 const AboutMe = () => {
   return (
     <section id="aboutMe" className="container mx-auto sectionSpacing flex flex-col gap-10">
-      <h2 className="sectionHeading">Sobre mim</h2>
+      <h2 className="sectionHeading px-5 ">Sobre mim</h2>
       {/* Texto + Linguagens */}
-      <div className="flex flex-col gap-5">
+      <div className="flex flex-col gap-5 px-5 ">
         {/* Texto */}
         <p className="text-[var(--color-text-primary)]">
           Desenvolvedora Front-End na Niloware, atuo na criação de interfaces

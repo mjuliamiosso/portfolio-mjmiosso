@@ -24,7 +24,10 @@ const Projects = ({ projects }: ProjectsProps) => {
   return (
     <div className="flex flex-col gap-2 lg:flex-row">
       {projects.map((project, index) => (
-        <div key={index} className="lg:flex">
+        <div
+          key={index}
+          className={`lg:flex ${activeIndex === index ? "flex-1" : ""}`}
+        >
           {/* Botão */}
           <button
             onClick={() => toggleProject(index)}
@@ -37,12 +40,17 @@ const Projects = ({ projects }: ProjectsProps) => {
             {/* Título */}
             <span className="verticalText">{project.title}</span>
             {/* Número do Projeto */}
-            <span className="text-3xl text-[var(--color-primary)]">{project.num}</span>
+            <span className="text-3xl text-[var(--color-primary)]">
+              {project.num}
+            </span>
           </button>
 
           {/* Conteúdo do Projeto */}
+
+          {/* Width full não está funcionando */}
           {activeIndex === index && (
-            <div className="flex flex-col items-center mt-2 bg-[var(--color-primary-ghost)] p-6 lg:flex-row lg:items-start lg:mt-0 lg:ml-2 w-full">
+            <div className="flex flex-col items-center mt-2 bg-[var(--color-primary-ghost)] p-6 lg:flex-row lg:items-start lg:mt-0 lg:ml-2 flex-1 gap-5">
+              {/* Imagem */}
               <img
                 src={project.image}
                 alt={project.title}
@@ -50,9 +58,11 @@ const Projects = ({ projects }: ProjectsProps) => {
               />
               <div className="space-y-3 w-full">
                 <div className="flex items-center justify-between">
-                  <h3 className="text-2xl font-bold text-[var(--color-text-primary)]">
+                  {/* Título */}
+                  <h3 className="text-2xl font-bold text-[var(--color-primary)]">
                     {project.title}
                   </h3>
+                  {/* Icones Links */}
                   <div className="flex items-center gap-3 text-[var(--color-text-primary)]">
                     {project.github && (
                       <a
@@ -76,6 +86,7 @@ const Projects = ({ projects }: ProjectsProps) => {
                     )}
                   </div>
                 </div>
+                {/* Descrição */}
                 <p className="text-[var(--color-text-primary)] text-base">
                   {project.description}
                 </p>
