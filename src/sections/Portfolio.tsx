@@ -1,10 +1,10 @@
 import Projects from "../components/Projects";
-import Logum from "../../public/Logum.png";
-import PropabandaFinancas from "../../public/propabanda-financas.png";
-import Niloware from "../../public/niloware.png";
-import Rivalsdle from "../../public/rivalsdle.png";
-import JogoMemoria from "../../public/jogo-da-memoria.png";
-import ClimaPrevisao from "../../public/clima-previsao.png";
+import Logum from "/Logum.png";
+import PropabandaFinancas from "/propabanda-financas.png";
+import Niloware from "/niloware.png";
+import Rivalsdle from "/rivalsdle.png";
+import JogoMemoria from "/jogo-da-memoria.png";
+import ClimaPrevisao from "/clima-previsao.png";
 
 const projectsProfissionais = [
   {
