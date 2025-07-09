@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 interface Experience {
   company: string;
@@ -36,24 +37,34 @@ const JobExperience = ({ experiences }: JobExperienceProps) => {
       </div>
 
       {/* Conteúdo da experiência */}
-      <div className="flex-1 space-y-5">
-        <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center">
-          {/* Título */}
-          <p className="text-xl font-bold text-[var(--color-primary)]">
-            {active.title}
-          </p>
-          {/* Data */}
-          <p className="text-sm text-[var(--color-text-light)]">
-            {active.date}
-          </p>
-        </div>
-        {/* Descrição */}
-        {active.description.split("\n").map((line, i) => (
-          <p key={i} className="text-base text-[var(--color-text-primary)]">
-            {line}
-          </p>
-        ))}
-      </div>
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={activeIndex} // importante para o AnimatePresence reiniciar a animação a cada troca
+          initial={{ opacity: 0, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, transition: { duration: 0 } }} // saída instantânea
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="flex-1 space-y-5"
+        >
+          <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center">
+            {/* Título */}
+            <p className="text-xl font-bold text-[var(--color-primary)]">
+              {active.title}
+            </p>
+            {/* Data */}
+            <p className="text-sm text-[var(--color-text-light)]">
+              {active.date}
+            </p>
+          </div>
+
+          {/* Descrição */}
+          {active.description.split("\n").map((line, i) => (
+            <p key={i} className="text-base text-[var(--color-text-primary)]">
+              {line}
+            </p>
+          ))}
+        </motion.div>
+      </AnimatePresence>
     </section>
   );
 };
