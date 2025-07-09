@@ -1,9 +1,15 @@
 import Button from "../components/Button";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
     <section className="bgHero">
-      <div className="px-5 container mx-auto flex flex-col text-center items-center gap-7 h-screen justify-center lg:items-start lg:text-left">
+      <motion.div
+        initial={{ opacity: 0, y: 0 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className="px-5 container mx-auto flex flex-col text-center items-center gap-7 h-screen justify-center lg:items-start lg:text-left"
+      >
         <div>
           <p className="text-base text-[var(--color-text-primary)]">
             Olá! Sou Maria Júlia
@@ -19,14 +25,11 @@ const Hero = () => {
           <a href="#footer">
             <Button variant="gradient">Entrar em contato</Button>
           </a>
-          <a
-            href="./maria-julia-miosso.pdf"
-            download="Maria Júlia Miosso"
-          >
+          <a href="./maria-julia-miosso.pdf" download="Maria Júlia Miosso">
             <Button variant="outlined">Download CV</Button>
           </a>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
