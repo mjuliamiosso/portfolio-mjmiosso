@@ -1,4 +1,7 @@
 import Tags from "../components/Tags";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 
 const technologies = [
   "React",
@@ -15,12 +18,34 @@ const technologies = [
 ];
 
 const AboutMe = () => {
+  const controls = useAnimation();
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+
   return (
-    <section id="aboutMe" className="container mx-auto sectionSpacing flex flex-col gap-10">
-      <h2 className="sectionHeading px-5 ">Sobre mim</h2>
+    <motion.section
+      ref={ref}
+      initial="hidden"
+      animate={controls}
+      variants={{
+        hidden: { opacity: 0, y: -50 },
+        visible: { opacity: 1, y: 0, transition: { duration: 1, ease: "easeOut" } },
+      }}
+      id="aboutMe"
+      className="container mx-auto sectionSpacing flex flex-col gap-10"
+    >
+      <h2 className="sectionHeading px-5">Sobre mim</h2>
+
       {/* Texto + Linguagens */}
-      <div className="flex flex-col gap-5 px-5 ">
-        {/* Texto */}
+      <div className="flex flex-col gap-5 px-5">
         <p className="text-[var(--color-text-primary)]">
           Desenvolvedora Front-End na Niloware, atuo na criação de interfaces
           modernas, performáticas e responsivas. Trabalho com tecnologias como
@@ -45,14 +70,13 @@ const AboutMe = () => {
           que unam código, design e foco no usuário.
         </p>
 
-        {/* Tecnologias / Tags */}
         <div className="flex flex-wrap gap-2">
           {technologies.map((tech) => (
             <Tags key={tech}>{tech}</Tags>
           ))}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

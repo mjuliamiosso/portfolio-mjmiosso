@@ -1,4 +1,7 @@
 import JobExperience from "../components/JobExperience";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 
 const experiences = [
   {
@@ -25,15 +28,35 @@ const experiences = [
 ];
 
 const WorkExperience = () => {
+  const controls = useAnimation();
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+
   return (
-    <section id="workExperience" className="bg-[var(--color-primary-ghost)]">
+    <motion.section
+      ref={ref}
+      initial="hidden"
+      animate={controls}
+      variants={{
+        hidden: { opacity: 0, y: -50 },
+        visible: { opacity: 1, y: 0, transition: { duration: 1, ease: "easeOut" } },
+      }}
+     id="workExperience" className="bg-[var(--color-primary-ghost)]">
       <div className="container mx-auto sectionSpacing flex flex-col gap-10">
         <h2 className="sectionHeading px-5">Experiências</h2>
         <div className="px-5 ">
           <JobExperience experiences={experiences} />
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
